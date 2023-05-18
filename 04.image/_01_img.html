@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지를 표출하는 img</title>
+</head>
+<body>
+    <!--상위경로는 ../-->
+    <!--이미지파일이 같은 레벨에 존재하면 파일명 바로 지정-->
+    <div>
+        <h1>원본 크기 그대로 표출</h1>
+        <h3>상위경로의 이미지 표출</h3>
+        <img src="../../image/karina.jpeg" alt="카리나는 신이에요">
+    </div>   
+    <div>
+        <!--같은 폴더안에 존재할 경우 /폴더명 파일명 지정-->
+        <h3>같은 레벨의 폴더안에 이미지 표출</h3>
+        <img src="/image/karina.jpeg" alt="카리나에용">
+    </div>   
+    <div>
+        <!--width, height 지정시 지정된 크기로 이미지 표출-->
+       <h3>같은 레벨의 이미지 표출</h3>
+        <img src="karina.jpeg" alt="카리나인데요"width="300" height="150">
+    </div>   
+    div>
+        <!--웹에 존재하는 이미지는 이미지의 url을 src로 설정해서 표출 가능-->
+       <h3>웹에 이미지 url로 이미지 표출</h3>
+        <img src="https://thumb.mtstarnews.com/06/2022/09/2022091722521313865_1.jpg/dims/optimize" 
+        alt="웹에 존재하는 카리나">
+    </div>  
+    
+</body>
+</html>
